@@ -124,8 +124,13 @@
 	}
 
 	.about-image-container {
-		width: 80%;
+		width: 100%;
 	}
+	
+	.about-subtitle {
+		width: 100% !important;
+	}
+	
 }
 
 
