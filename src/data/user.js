@@ -3,7 +3,7 @@ const INFO = {
 		title: "Portfolio de David",
 		name: "David Allakedet",
 		email: "allakedetdavid@gmail.com",
-		logo: "david2.png",
+		logo: "homepage.webp",
 	},
 
 	socials: {
