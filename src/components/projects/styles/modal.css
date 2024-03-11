@@ -125,7 +125,7 @@
   margin-bottom: 10px;
 }
 
-/* Media queries pour la réactivité */
+/* Media queries pour la réactivité
 
 @media (max-width: 992px) {
   .modal {
@@ -143,7 +143,7 @@
 }
 
 /* Pour les écrans jusqu'à 768px (tablettes et smartphones en mode paysage) */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .modal {
       width: 90%;
   }
@@ -156,10 +156,10 @@
   .project-details {
       width: 100%; 
   }
-}
+} */
 
 /* Pour les écrans jusqu'à 576px (smartphones) */
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .modal {
       width: 95%;
   }
@@ -173,6 +173,11 @@
   }
   .det-img{
     flex-direction: column;
+  }
+  .additional-image-3{
+    max-width: 500px;
+    margin-left: 0;
+    
   }
 
   .main-image{

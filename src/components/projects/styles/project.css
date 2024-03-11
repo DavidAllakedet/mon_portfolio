@@ -28,11 +28,12 @@
 }
 
 .project-container {
-	padding: 30px;
+	height: 400px;
+	padding: 10px;
 }
 
 .project-logo {
-	width: 110%;
+	width: 100%;
 }
 
 .project-logo img {
@@ -73,7 +74,10 @@
 
 
 @media (max-width: 600px) {
+
+
 	.project {
+		width: 100%;
 		height: auto;
 	}
 }
