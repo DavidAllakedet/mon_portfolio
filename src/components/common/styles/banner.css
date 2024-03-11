@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 300px;
-    background-image: url('../images/banner-background.jpeg'); 
+    background-image: url('../images/banner-background.webp'); 
     background-size: cover; 
     background-position: center; 
     color: #fff; 
@@ -41,20 +41,6 @@
       transform: translateY(0);
     }
   }
-  
-  /* Responsive styles
-@media (max-width: 900px) {
-    .banner-container {
-      height: 200px;
-    }
-    
-    .banner-title {
-      padding-top: 30px;
-      font-size: 32px;
-    }
-  
-
-  } */
   
   @media (max-width: 600px) {
     .banner-container {

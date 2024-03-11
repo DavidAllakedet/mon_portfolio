@@ -69,7 +69,7 @@
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	.notfound-message {
 		position: absolute;
 		top: auto;

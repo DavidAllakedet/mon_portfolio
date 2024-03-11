@@ -79,7 +79,7 @@ const INFO = {
 			link: "https://github.com/DavidAllakedet/P7_Mon_Vieux_Grimoire.git",
 			details: {
 			  year: "2023",
-			  mission: "Développement du front d’un site de location d’hébergement avec React.",
+			  mission: "Développement du backend d’un site de notation de livre.",
 			  technologies: ["React", "Node.js", "CSS"],
 			  images: [
 				"grimoire1.webp",
