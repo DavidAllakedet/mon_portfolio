@@ -82,7 +82,7 @@ button[type="submit"]:hover {
 
 @media (max-width: 600px) {
     .contact-container {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 	.contact-form {
 		margin-left: 0;
