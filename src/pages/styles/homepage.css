@@ -93,7 +93,12 @@
 	padding-top: 30px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
+
+	.homepage-logo-container {
+		z-index: 200;
+	}
+
 	.homepage-first-area {
 		flex-direction: column;
 	}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { Helmet } from "react-helmet";
-
+import Banner from "../components/common/banner";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
@@ -57,6 +57,7 @@ const Contact = () => {
 
             <div className="page-content">
                 <NavBar active="contact" />
+                <Banner />
                 <div className="content-wrapper">
                     <div className="contact-logo-container">
                         <div className="contact-logo">

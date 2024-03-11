@@ -37,18 +37,6 @@
 	width: 80% !important;
 }
 
-.cv-download-link {
-	color:#14b8a6;
-	text-decoration: none;
-	margin-top: 20px; 
-	display: inline-block;
-}
-
-.cv-download-link:hover {
-	text-decoration: underline;
-}
-
-
 .about-left-side {
 	display: flex;
 	flex-direction: column;
@@ -81,7 +69,7 @@
 	display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
 	.about-logo {
 		z-index: 100;
 	}
@@ -118,7 +106,7 @@
 	}
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
 	.about-container {
 		padding-top: 60px;
 	}
@@ -131,6 +119,6 @@
 		width: 100% !important;
 	}
 	
-}
+} */
 
 

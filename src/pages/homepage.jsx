@@ -11,6 +11,7 @@ import {
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
+import Banner from "../components/common/banner";
 import NavBar from "../components/common/navBar";
 import Schools from "../components/homepage/schools";
 import AllProjects from "../components/projects/allProjects";
@@ -29,34 +30,36 @@ const Homepage = () => {
 
 	const title = INFO.homepage.title;
     const [animatedTitle, setAnimatedTitle] = useState("");
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isAnimating, setIsAnimating] = useState(true);
 
     useEffect(() => {
-    let isMounted = true;
-    let index = 1; // Commencer à partir de la deuxième lettre
-    setAnimatedTitle(title[0]); // Initialiser prevTitle avec la première lettre
-
-    const intervalId = setInterval(() => {
-        if (isMounted) {
-            setAnimatedTitle((prevTitle) => {
-                if (index === title.length) {
-                    return ""; 
-                } else {
-                    return prevTitle + title[index];
-                }
-            });
-            index++;
-
-            if (index === title.length + 1) {
-                index = 1; // Réinitialiser l'index
+        const intervalId = setInterval(() => {
+            if (currentIndex === title.length) {
+                clearInterval(intervalId); // Arrêter l'intervalle
+                setTimeout(() => {
+                    setIsAnimating(false); // Arrêter l'animation après un délai
+                    setAnimatedTitle(""); // Effacer le texte après un délai
+                    setCurrentIndex(0); // Réinitialiser l'index
+                    setIsAnimating(true); // Relancer l'animation
+                }, 2000); // Délai de 2 secondes avant d'effacer le texte
+            } else {
+                setAnimatedTitle(prevTitle => prevTitle + title[currentIndex]);
+                setCurrentIndex(prevIndex => prevIndex + 1);
             }
-        }
-    }, 100); 
+        }, 100);
+        return () => clearInterval(intervalId);
+    }, [currentIndex, title]);
 
-    return () => {
-        isMounted = false;
-        clearInterval(intervalId);
-    };
-}, [title]);
+    // Effet pour réinitialiser l'animation une fois qu'elle est terminée
+    useEffect(() => {
+        if (!isAnimating && animatedTitle === title) {
+            // Réinitialiser le titre animé et relancer l'animation
+            setAnimatedTitle("");
+            setCurrentIndex(0);
+            setIsAnimating(true);
+        }
+    }, [animatedTitle, title, isAnimating]);
 
 
 	useEffect(() => {
@@ -101,6 +104,7 @@ const Homepage = () => {
 
 			<div className="page-content">
 				<NavBar active="home" />
+				<Banner />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>

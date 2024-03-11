@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-
+import Banner from "../components/common/banner";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
@@ -25,6 +25,7 @@ const Projects = () => {
 
 			<div className="page-content">
 				<NavBar active="projects" />
+				<Banner />
 				<div className="content-wrapper">
 					<div className="projects-logo-container">
 						<div className="projects-logo">
