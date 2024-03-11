@@ -42,3 +42,38 @@
 	text-align: right;
 	color: var(--tertiary-color);
 }
+
+
+@media (max-width: 600px) {
+	.school {
+	  width: 100%; /* Ajuster la largeur pour occuper toute la largeur de l'écran */
+	  flex-direction: column; /* Afficher les éléments en colonne */
+	  align-items: center; /* Centrer les éléments horizontalement */
+	}
+  
+	.school-image {
+	  height: 50px; /* Ajuster la hauteur de l'image */
+	  width: 50px; /* Ajuster la largeur de l'image */
+	  margin-bottom: 10px; /* Ajouter un espace en bas de l'image */
+	}
+  
+	.school-title {
+	  padding-left: 0; /* Réinitialiser le padding à gauche */
+	  text-align: center; /* Centrer le texte */
+	  margin-top: 10px; /* Ajuster la marge en haut */
+	}
+  
+	.school-subtitle {
+	  position: static; /* Rétablir la position normale */
+	  text-align: center; /* Centrer le texte */
+	  padding-top: 10px; /* Ajuster l'espacement en haut */
+	  padding-left: 0; /* Réinitialiser le padding à gauche */
+	}
+  
+	.school-duration {
+	  position: static; /* Rétablir la position normale */
+	  width: 100%; /* Ajuster la largeur */
+	  text-align: center; /* Centrer le texte */
+	  padding-top: 10px; /* Ajuster l'espacement en haut */
+	}
+  }
