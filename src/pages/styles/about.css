@@ -23,6 +23,7 @@
 
 .about-main {
 	display: flex;
+	gap: 10px;
 }
 
 .about-right-side {

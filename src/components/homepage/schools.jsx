@@ -23,7 +23,7 @@ const Schools = () => {
 							<div className="school-subtitle">
 								 Infographie/Multimedia
 							</div>
-							<div className="school-duration">Novembre 2019 - Aout 2023</div>
+							<div className="school-duration">Novembre 2019 - Aout 2022</div>
 						</div>
 
 						<div className="school">

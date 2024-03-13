@@ -20,9 +20,12 @@ const Project = (props) => {
     <React.Fragment>
       <div className="project">
         <div className="project-container">
-          <div className="project-logo" onClick={openModal}>
-          <img src={`/projects/images/${image}`} alt={title} className="main-image" />
+        <div className="project-mockup" onClick={openModal}>
+          <div className="image-container">
+            <img src={`/projects/images/${image}`} alt={title} className="main-image" />
+            <div className="image-text">Ouvrir</div>
           </div>
+        </div>
           <div className="project-title">{title}</div>
           <div className="project-description">{description}</div>
           <div className="project-link">
@@ -38,7 +41,7 @@ const Project = (props) => {
       {modalOpen && (
         <Modal onClose={closeModal} project={props}> 
           <div className="modal-content">
-            <img src={image} alt="logo" />
+            <img src={image} alt="mockup" />
             <div className="project-title">{title}</div>
             <div className="project-description">{description}</div>
            

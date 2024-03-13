@@ -32,11 +32,52 @@
 	padding: 10px;
 }
 
-.project-logo {
+.project-mockup {
 	width: 100%;
+	position: relative;
 }
 
-.project-logo img {
+  .image-container {
+	position: relative;
+  }
+  
+  .image-text {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color:transparent ;
+	font-size: 24px;
+	font-weight: 700;
+	background-color: rgba(0, 0, 0, 0.1); 
+	padding: 5px; 
+	text-align: center; 
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+  }
+  .image-text:hover {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8); 
+	color: white; 
+  }
+  
+  
+
+.project-mockup::before {
+	content: "voire";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.5); 
+	padding: 5px;
+	border-radius: 5px;
+  }
+
+.project-mockup img {
 	width: 100%;
 }
 

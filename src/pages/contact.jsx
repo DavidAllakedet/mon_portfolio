@@ -75,7 +75,7 @@ const Contact = () => {
                             ou un commentaire spécifique, n'hésitez pas à m'envoyer un e-mail à
                              <br /> <a href={`mailto:${INFO.main.email}`}>{INFO.main.email}</a> . 
                             Vous pouvez également utiliser le formulaire de contact sur mon site Web.
-                            Si vous préférez les réseaux sociaux, vous pouvez me trouver sur 
+                            Si vous préférez les réseaux sociaux, vous pouvez me trouver sur   .   
                             <a href={INFO.socials.instagram} 
                             target="_blank" rel="noreferrer">{INFO.socials.instagram}</a>.
                         </div>                      
