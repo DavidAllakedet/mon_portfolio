@@ -127,7 +127,7 @@
 
 /*Media queries pour la réactivité*/
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .modal {
       width: 90%;
   }
@@ -152,8 +152,8 @@
   }
 }
 
-/* Pour les écrans jusqu'à 768px (tablettes et smartphones en mode paysage) */
-@media (max-width: 768px) {
+/* Pour les écrans jusqu'à 800px (tablettes et smartphones en mode paysage) */
+@media (max-width: 800px) {
   .modal {
       width: 90%;
   }
@@ -178,7 +178,7 @@
   }
 } 
 
-/* Pour les écrans jusqu'à 576px (smartphones) */
+/* Pour les écrans jusqu'à 600px (smartphones) */
 @media (max-width: 600px) {
   .modal {
       width: 95%;

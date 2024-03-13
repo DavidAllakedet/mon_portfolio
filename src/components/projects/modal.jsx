@@ -7,10 +7,8 @@ const Modal = ({ onClose, project }) => {
   const { title, description, details,image, linkText, link } = project;
   const { year, mission, technologies } = details;
 
-  // Référence à l'élément de fond de la modale
   const modalRef = useRef(null);
 
-  // Gestionnaire d'événement pour détecter les clics à l'extérieur de la modale
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {

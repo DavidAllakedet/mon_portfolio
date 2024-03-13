@@ -26,7 +26,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-					© 2024 David ALLAKEDET. Tous droits réservés.
+					Realisé par David Allakedet
 					</div>
 				</div>
 			</div>
