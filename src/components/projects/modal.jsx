@@ -4,8 +4,8 @@ import { faTimes, faLink } from "@fortawesome/free-solid-svg-icons";
 import "./styles/modal.css";
 
 const Modal = ({ onClose, project }) => {
-  const { title, description, details,image, linkText, link } = project;
-  const { year, mission, technologies } = details;
+  const { title, year, description, problematique, details,image, linkText, link } = project;
+  const {  mission, competencesDeveloppees, technologies } = details;
 
   const modalRef = useRef(null);
 
@@ -33,23 +33,36 @@ const Modal = ({ onClose, project }) => {
           </button>
         </div>
         <div className="modal-body">
-          <strong className="descript">Description: </strong>
+          <img src={`/projects/images/${image}`} alt={title} className="main-image" /> <br />
+          <strong className="modal-det">Année:</strong> {year}
+            <br />
+          <strong className="modal-det">Description: </strong>
           {description}
           <br />
+          <strong className="modal-det">Problematique: </strong>
+          {problematique}
+          <br />
+          <strong className="modal-det">Compétences développées:</strong>
+            <ul className="competences-list">
+              {competencesDeveloppees.map((competence, index) => (
+                <li key={index}>{competence}</li>
+              ))}
+            </ul>
+            <br />
           <div className="det-img">
-            <div className="project-details">
-              <strong className="items">Année:</strong> {year}
-              <br />
-              <strong className="items">Mission:</strong> {mission}
-              <br />
-              <strong className="items">Technologies utilisées:</strong>
-              <ul className="technologies-list">
-                {technologies.map((tech, index) => (
-                  <li key={index}>{tech}</li>
-                ))}
-              </ul>
-            </div>
-            <img src={`/projects/images/${image}`} alt={title} className="main-image" />
+          <div className="project-details">
+            
+            <strong className="modal-det">Mission:</strong> {mission}
+            <br />
+          
+            <strong className="modal-det">Technologies utilisées:</strong>
+            <ul className="technologies-list">
+              {technologies.map((tech, index) => (
+                <li key={index}>{tech}</li>
+              ))}
+            </ul>
+          </div>
+            
           </div>
 
           <div className="image-gallery">
