@@ -127,7 +127,7 @@ const Homepage = () => {
 									<div className="homepage-image-wrapper">
 										<img
 											src="homepage.webp"
-											alt="about"
+											alt="homepage"
 											className="homepage-image"
 										/>
 									</div>

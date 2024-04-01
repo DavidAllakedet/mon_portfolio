@@ -13,8 +13,8 @@
 
 .homepage-first-area {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	/* justify-content: space-between; */
+	/* align-items: center; */
 }
 
 .homepage-first-area-left-side {
