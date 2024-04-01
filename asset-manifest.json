@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/portfolio_david/static/css/main.3e8e4f16.css",
+    "main.js": "/portfolio_david/static/js/main.feb15e22.js",
+    "static/media/banner-background.webp": "/portfolio_david/static/media/banner-background.a950dc4d493557a02ccc.webp",
+    "index.html": "/portfolio_david/index.html",
+    "main.3e8e4f16.css.map": "/portfolio_david/static/css/main.3e8e4f16.css.map",
+    "main.feb15e22.js.map": "/portfolio_david/static/js/main.feb15e22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e8e4f16.css",
+    "static/js/main.feb15e22.js"
+  ]
+}
